@@ -24,7 +24,7 @@ A personal gallery application that you display your photos for others to see.
 - Heroku
 
 ## Setup and installation
-- Clone the repo at[]
+- Clone the repo at[https://pichamtaani.herokuapp.com/]
 - Cd the repo,photo moto,install the requirements and activate the virtual env
 - Set up relevant databases
 - Migrate the app with :python manage.py migrate 
