@@ -11,16 +11,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-from decouple import config, Csv
-import dj_database_url
-import django_heroku
-from dotenv import load_dotenv
+##from decouple import config, Csv
+##import dj_database_url
+##import django_heroku
+##from dotenv import load_dotenv
 
-load_dotenv()
+##load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+##BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -137,7 +138,7 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 STATIC_URL = '/static/'
 
